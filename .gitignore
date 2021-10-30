@@ -10,6 +10,7 @@
 *.log
 
 # ignore ALL files in ANY directory named temp
+.vscode/
 temp/
 .DS_Store
 *.env
