@@ -1,0 +1,23 @@
+# VS Code files for those working on multiple tools
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ignore ALL .log files
+*.log
+
+# ignore ALL files in ANY directory named temp
+temp/
+.DS_Store
+*.env
+*.htaccess
+vendor/
+login-benutzer/
+begriffe.sql
+counter.txt
+lazysizes.min.js
+robots.txt
+sitemap.xml

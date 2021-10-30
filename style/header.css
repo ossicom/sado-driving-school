@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+/* Algemeine Grundeinstellungen */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  font-size: 100%; /* 62.5% Basis Schriftgrösse von 10px (1em = 10px, 1rem = 10px, 1.4em = 14px, 2.9rem = 29px*/
+  font-family: Arial, Helvetica, sans-serif, Verdana, Tahoma, sans-serif;
+  background-color: white;
+}
+/*---------------------------ENDE ALGEMEIN STYLE--------------------------*/
+
+/*------------------------------------------------------------------------*/
+/*                           HEADER STYLE                              */
+/*------------------------------------------------------------------------*/
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+/* das logo sado*/
+.logosado a img {
+  height: 125px;
+}
+.preise {
+  display: flex;
+  flex-direction: column;
+}
+.preise a {
+  padding: 0.25em;
+  font-size: 0.75em;
+}
+.preise a:hover {
+  text-decoration: underline;
+}
+/*--------ENDE LOGO------*/
+
+.telnr1 a {
+  color: black;
+  font-size: 2em;
+}
+.fa-phone-square-alt {
+  color: green;
+}
+
+/*----------ENDE TELNR------*/
+.emaillogo a {
+  color: black;
+  font-size: 2em;
+}
+.fa-envelope {
+  color: black;
+}
+/*------ENDE EMAIL-----------*/
+.socialmedia img {
+  height: 2em;
+  width: 2em;
+  padding: 0;
+  margin: 0;
+}
+/*----------------------------------------------------------------*/
+/*                        ENDE HEADER STYLE                       */
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/*                             NAV STYLE                          */
+/*----------------------------------------------------------------*/
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0.5em;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*brand im nav unsichtbar machen und stylen*/
+.brand-title {
+  margin: 0.5em;
+  display: none;
+}
+
+.navbar-links ul {
+  margin: 0em 2em 0em 2em;
+  padding: 0em;
+  display: flex;
+}
+.navbar-links li a {
+  color: white;
+  margin: 0em;
+  padding: 1em;
+  display: block;
+}
+
+.navbar-links li:hover {
+  text-decoration: underline;
+}
+/*----------------------------------------------------------------*/
+/*                         ENDE NAV STYLE                         */
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/*                          HAMBURGER MENU                        */
+/*----------------------------------------------------------------*/
+.toggle-button {
+  bottom: 1em;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.5em;
+  height: 1.5em;
+  margin-top: 1em;
+}
+.toggle-button .bar {
+  height: 0.3em;
+  width: 100%;
+  background-color: black;
+  border-radius: 1em;
+}
+hr {
+  display: none;
+}
+#telmailsticky {
+  display: none;
+}
+#fasicons {
+  display: none;
+}
+
+/*----------------------------------------------------------------*/
+/*                         ENDE HAMBURGER MENU                    */
+/*----------------------------------------------------------------*/
+
+/*-----MEDIA QUERIES FÜR TABLETS & IPADS---MEDIAQUERIES IN em ANGEBEN 
+640PX / 16PX = 40em ------FÜR TABLETS & IPADS 768px / 16px = 48em ------*/
+
+@media only screen and (max-width: 1050px) {
+  /*-----------------------------------------------*/
+  /*           HEADER STYLE 768PX                  */
+  /*-----------------------------------------------*/
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #telmailsticky {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3em;
+    background-color: whitesmoke;
+  }
+  #telmailsticky a {
+    font-size: 1.15em;
+    padding: 0.5em;
+  }
+  .socialmedia {
+    display: none;
+  }
+  .preise {
+    display: flex;
+    flex-direction: row;
+  }
+  #logoimheader {
+    display: none;
+  }
+  /* das logo sado*/
+  .logosado a img {
+    height: 150px;
+    width: 100%;
+  }
+  hr {
+    display: inline;
+    border-width: 0;
+    color: white;
+    background-color: white;
+    height: 1px;
+    width: 75%;
+    text-align: center;
+    margin-left: 12.5%;
+  }
+  /* logo und das hamburger icon */
+  .brand-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5em;
+    border-bottom: solid black 0.025em;
+  }
+  #header {
+    display: none;
+  }
+  .emaillogo {
+    padding: 0.5em;
+    font-size: large;
+  }
+  .telnr2 {
+    padding: 0.5em;
+    font-size: large;
+  }
+
+  /*-----------------------------------------------*/
+  /*           NAV STYLE 768PX              */
+  /*-----------------------------------------------*/
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+    background-color: black;
+  }
+  .navbar {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: 0.5em 1em;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+  h1 {
+    font-size: 1.25em;
+  }
+  .preise2 a {
+    color: white;
+    padding: 0.5em;
+  }
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 100px) and (max-width: 390px) {
+  .brand-title {
+    font-size: smaller;
+  }
+
+  #telmailsticky a {
+    font-size: 1em;
+    padding: 0.5em;
+  }
+}

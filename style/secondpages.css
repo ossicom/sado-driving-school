@@ -1,0 +1,139 @@
+/*-----------------------------------------------------------------*/
+/*                  ALGEMEINE STYLES SECONDPAGES                   */
+/*-----------------------------------------------------------------*/
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.captcha {
+  display: flex;
+  justify-content: center;
+}
+.g-recaptcha {
+  margin: 0.5em;
+}
+.nothelfer {
+  text-align: center;
+  width: 75%;
+}
+.secondpageshr {
+  display: block;
+  border-width: 0;
+  color: black;
+  background-color: black;
+  height: 1px;
+  width: 100%;
+  text-align: center;
+}
+p.inhalttext {
+  text-align: left;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  word-spacing: 3px;
+  white-space: wrap;
+}
+
+/*-----------------------------------------------------------------*/
+/*             ENDE ALGEMEINE STYLES SECONDPAGES                   */
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*                  KONTAKT FORMULAR STYLES                        */
+/*-----------------------------------------------------------------*/
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='password'],
+input[type='date'],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 0.5px solid #ccc;
+  border-radius: 17px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+/*-----------------------------------------------------------------*/
+/*             ENDE ALGEMEINE STYLES SECONDPAGES                   */
+/*-----------------------------------------------------------------*/
+
+/*css for alert recaptcha messages*/
+
+.alert-success {
+  z-index: 1;
+  background: #d4edda;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #3ad66e;
+  border-radius: 4px;
+}
+
+.alert-error {
+  z-index: 1;
+  background: #fff3cd;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #ffa502;
+  border-radius: 4px;
+}
+/* error für form validation */
+span .errors {
+  color: red;
+}
+
+/* kontakt card im main damit alle card gleichgross sind und in der mitte centriert wenn mal bei
+grässeren bildschirmen 4 card nebeneinander sind */
+.kontaktflex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*style im contakt card*/
+.kontakttel {
+  color: black;
+
+  padding-top: 1em;
+}
+@media only screen and (max-width: 1050px) {
+  .nothelfer {
+    text-align: center;
+    width: auto;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+  .cards {
+    gap: 1em;
+    margin: 0.5em;
+  }
+  .fa-phone-square-alt {
+    color: black;
+  }
+  h1.solid {
+    font-size: 1.5em;
+    margin-top: 0em;
+  }
+  .solid1 {
+    margin: 1em;
+  }
+  #solide {
+    width: auto;
+  }
+  #solide2 {
+    width: auto;
+  }
+  .container {
+    width: auto;
+    margin-top: 0.5em;
+  }
+}
