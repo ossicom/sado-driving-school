@@ -131,7 +131,7 @@
 
             //recaptcha
             $response   = isset($_POST["g-recaptcha-response"]) ? $_POST['g-recaptcha-response'] : null;
-            $privatekey = "6LcBLQQcAAAAACkavAxNj3Ld7dAd2w9LFC0u7D0q"; //Enter your secret key here
+            $privatekey = "the secret key from recaptcha hier"; //Enter your secret key here
 
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
