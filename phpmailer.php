@@ -102,7 +102,7 @@
             $mail->Host = 'asmtp.mail.hostpoint.ch';
             $mail->SMTPAuth = true;
             $mail->Username = 'info@sado.ch'; // email-Adresse, die Sie als SMTP-Server verwenden möchten
-            $mail->Password = '43UXS4E2!QGPqjLhg5!m'; // email address Password
+            $mail->Password = 'your email password'; // email address Password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = '587';
             $mail->CharSet = "utf-8";
