@@ -104,7 +104,7 @@
                     style="height:125px"><?php  strip_tags(nl2br(htmlspecialchars($nachricht))) ? $nachricht : '' ?></textarea>
 
                 <div class="captcha">
-                    <div class="g-recaptcha" data-sitekey="6LcBLQQcAAAAAIF-36vrGX2gHz5FweUVgFwipSUN">
+                    <div class="g-recaptcha" data-sitekey="enter your sitekey hier">
                     </div>
                 </div>
 
