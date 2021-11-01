@@ -7,6 +7,13 @@ use PHPMailer\PHPMailer\Exception;
 // Load Composer's autoloader
 require 'vendor/autoload.php';
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+
+$PSW = $_ENV['PSW'];
+
+
 $firstname = $lastname = $street = $plz = $email = $telefon = $kategorie = $nachricht = "";
 $errors = array(
     'firstname' => '', 'lastname' => '', 'street' => '', 'plz' => '',
@@ -102,7 +109,7 @@ if (isset($_POST['submit'])) {
         $mail->Host = 'asmtp.mail.hostpoint.ch';
         $mail->SMTPAuth = true;
         $mail->Username = 'info@sado.ch'; // email-Adresse, die Sie als SMTP-Server verwenden möchten
-        $mail->Password = '43UXS4E2!QGPqjLhg5!m'; // email address Password
+        $mail->Password = $PSW; // email address Password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = '587';
         $mail->CharSet = "utf-8";
