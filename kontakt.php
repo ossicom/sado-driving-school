@@ -103,7 +103,11 @@
                 <textarea id="nachricht" name="nachricht" maxlength="500" placeholder="NACHRICHT" value="<?php htmlspecialchars($nachricht) ?>" style="height:125px"><?php strip_tags(nl2br(htmlspecialchars($nachricht))) ? $nachricht : '' ?></textarea>
 
                 <div class="captcha">
+<<<<<<< HEAD
                     <div class="g-recaptcha" data-sitekey="enter the data site key hier">
+=======
+                    <div class="g-recaptcha" data-sitekey="enter your sitekey hier">
+>>>>>>> 9a7a96ad5de70aaa96f69350589ff5263a7a3069
                     </div>
                 </div>
 
